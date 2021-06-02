@@ -10,5 +10,15 @@
 * When overriding of core methods, provide this change as standalone utility mod for another mod developers and it's source code
 * Describe all your mod changes include changes in core scripts
 * When you are not able to modify something, feel free to contact us for providing of support for this changes
+## Third Party Assets
+### [ModdingTool](https://assetstore.unity.com/packages/tools/integration/modtool-75580)
+Modding Tool
+### [Lean Localization](https://assetstore.unity.com/packages/tools/localization/lean-localization-28504)
+Localization Tool
+## GameObjects Hierarchy
+### Camera [GameObject]
+#### Transform [Component]
+#### Camera [Component]
+#### Audio Listener [Component]
 ## License
 This work is licensed under [Attribution-NonCommercial-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/).
