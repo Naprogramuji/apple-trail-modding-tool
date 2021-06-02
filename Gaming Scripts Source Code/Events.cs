@@ -1,34 +1,38 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System;
 
 namespace AppleTrail
 {
     public class Events : MonoBehaviour
     {
-        [SerializeField]
-        protected GameObject mainMenuUI;
-        [SerializeField]
-        protected GameObject newTrailUI;
-        [SerializeField]
-        protected Slider newGameYearSlider;
-        [SerializeField]
-        protected TextMeshProUGUI newGameYearNumberText;
-        [SerializeField]
-        protected GameObject mapUI;
+        public GameObject mainMenuUI;
+
+        public GameObject newTrailUI;
+
+        public Slider newGameYearSlider;
+
+        public TextMeshProUGUI newGameYearNumberText;
+
+        public GameObject mapUI;
+
+        public World worldComponent;
+
+        public GameObject gameUI;
+
         public virtual void NewTrail()
         {
-            SetNewTrailYearPermitedValues(1492, 1762);
+            SetNewTrailYearPermitedValues();
             mainMenuUI.SetActive(false);
             newTrailUI.SetActive(true);
         }
 
-        protected virtual void SetNewTrailYearPermitedValues(short minValue, short maxValue)
+        public virtual void SetNewTrailYearPermitedValues()
         {
             var sliderComponent = newGameYearSlider.GetComponent<Slider>();
-            sliderComponent.minValue = minValue;
-            sliderComponent.maxValue = maxValue;
+            sliderComponent.minValue = worldComponent.year.initial;
+            sliderComponent.maxValue = worldComponent.year.ending;
+            sliderComponent.value = worldComponent.year.recommended;
         }
 
         public virtual void SetNewTrailYearNumber()
@@ -44,6 +48,12 @@ namespace AppleTrail
         public virtual void ExitGame()
         {
             Application.Quit();
+        }
+
+        public virtual void StartGame()
+        {
+            newTrailUI.SetActive(false);
+            gameUI.SetActive(true);
         }
     }
 }

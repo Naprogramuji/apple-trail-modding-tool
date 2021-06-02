@@ -13,9 +13,9 @@ namespace ModTool
     /// </summary>
     public class ModMenu : MonoBehaviour
     {
-        private ModManager modManager;
+        public ModManager modManager;
 
-        private Dictionary<Mod, ModItem> modItems;
+        public Dictionary<Mod, ModItem> modItems;
 
         /// <summary>
         /// The content panel where the menu items will be parented
@@ -35,7 +35,7 @@ namespace ModTool
         /// <summary>
         /// Are the enabled mods loaded?
         /// </summary>
-        private bool isLoaded;
+        public bool isLoaded;
 
         public virtual void Start()
         {
