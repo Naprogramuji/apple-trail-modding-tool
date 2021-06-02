@@ -9,7 +9,7 @@
 * When necessary, override core method
 * When overriding of core methods, provide this change as standalone utility mod for another mod developers and it's source code
 * Describe all your mod changes include changes in core scripts
-* Create pull request for your core scripts fixes and improvements (Nobody is perfect. Lot of core scripts was written in hurry so we can provide more stuff for you. Your changes can help improve stability, security and extensibility of this game.)
+* Create pull request for your core scripts fixes and improvements (Nobody is perfect. Lot of core scripts was written in hurry so we can provide more stuff for you. Your changes can help improve stability, security and extensibility of this game and your modding utilites can become part of core game.)
 * When you are not able to modify something, feel free to contact us for providing of support for this changes
 ## Modding Tutorials
 ### Textures
