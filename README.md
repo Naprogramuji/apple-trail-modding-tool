@@ -43,6 +43,8 @@ Localization Tool
             * Lean Language CSV [Component - Lean Localization]
         * Czech CSV [GameObject]
             * Lean Language CSV [Component - Lean Localization]
+    * World [GameObject]
+        * World [Component - AppleTrail.World]
 *  Canvas [GameObject]
     * Rect Transform [Component]
     * Canvas [Component]

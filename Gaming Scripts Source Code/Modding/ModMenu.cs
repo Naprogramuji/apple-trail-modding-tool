@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using System.Linq;
 using ModTool;
 
-namespace AppleTrail
+namespace ModTool
 {
 
     /// <summary>

@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using ModTool;
 
-namespace AppleTrail
+namespace ModTool
 {
     public class ModItem : MonoBehaviour
     {
