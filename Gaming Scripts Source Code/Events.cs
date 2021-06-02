@@ -10,6 +10,7 @@ namespace AppleTrail
         public GameObject newTrailUI;
         public Slider newGameYearSlider;
         public TextMeshProUGUI newGameYearNumberText;
+        public GameObject mapUI;
         public virtual void NewTrail()
         {
             mainMenuUI.SetActive(false);
@@ -19,6 +20,11 @@ namespace AppleTrail
         public virtual void SetNewTrailYearNumber()
         {
             newGameYearNumberText.SetText(newGameYearSlider.value.ToString());
+        }
+
+        public virtual void CloseMap()
+        {
+            mapUI.SetActive(false);
         }
 
         public virtual void ExitGame()
