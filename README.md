@@ -16,9 +16,28 @@ Modding Tool
 ### [Lean Localization](https://assetstore.unity.com/packages/tools/localization/lean-localization-28504)
 Localization Tool
 ## GameObjects Hierarchy
-### Camera [GameObject]
-#### Transform [Component]
-#### Camera [Component]
-#### Audio Listener [Component]
+* Camera [GameObject]
+    * Transform [Component]
+    * Camera [Component]
+    * Audio Listener [Component]
+*  Canvas [GameObject]
+    * Rect Transform [Component]
+    * Canvas [Component]
+    * Canvas Scaler [Component]
+    * Graphic Raycaster [Component]
+    * Game [GameObject]
+        * Rect Transform [Component]
+        * Buttons [GameObject]
+            * Rect Transform [Component]
+            * Map [GameObject]
+                * Rect Transform [Component]
+                * Canvas Renderer [Component]
+                * Image [Component]
+                * Button [Component]
+                * Text [GameObject]
+                    * Rect Transform [Component]
+                    * Canvas Renderer [Component]
+                    * TextMeshPro - Text (UI) [Component]
+    * Map [GameObject]
 ## License
 This work is licensed under [Attribution-NonCommercial-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/).
