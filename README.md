@@ -1,6 +1,6 @@
 # Apple Trail Modding Tool
 ## Setup
-1. Install Unity 2021.1.9f1
+1. Install Unity 2021.1.10f1
 2. Import package "Apple Trail Modding Package.package"
 3. Feel free to modify game
 4. You can find up-to-date original C# gaming scripts in "Gaming Scripts Source Code" folder.
@@ -213,6 +213,7 @@ Object for internal testing. Can be used for mods testing. Don’t use this obje
 ## Exporting of the Mod
 1. Tools -> ModTool -> Export Mod
 2. Export to “Apple Trail/Mods” folder
-3. [More info about exporting of mod](https://hellomeow.net/modtool/documentation/html/bc47d09d-b0b6-490a-af4b-7f0cb43b84b9.htm)
+3. You need to install Unity support for all platforms you selected when before export
+4. [More info about exporting of mod](https://hellomeow.net/modtool/documentation/html/bc47d09d-b0b6-490a-af4b-7f0cb43b84b9.htm)
 ## License
 This work is licensed under [Attribution-NonCommercial-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/).
