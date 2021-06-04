@@ -15,7 +15,7 @@ namespace AppleTrail
         public Faction faction;
 
         [Tooltip("Date of establishment of colony (colony appears in this year)")]
-        public Founded foundedDate;
+        public FoundedDate foundedDate;
 
         [Tooltip("Date of abandoning of colony (Used for population grown simulation. Trading with historicaly abandoned colonies can save it.)")]
         public Abandoned abandonedDate;
@@ -54,7 +54,7 @@ namespace AppleTrail
         }
 
         [Serializable]
-        public struct Founded
+        public struct FoundedDate
         {
             [Tooltip("Year of establishment of colony")]
             public short year;

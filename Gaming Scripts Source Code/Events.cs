@@ -53,6 +53,8 @@ namespace AppleTrail
         public virtual void StartGame()
         {
             newTrailUI.SetActive(false);
+            worldComponent.date.year = (short)newGameYearSlider.value;
+            worldComponent.SpawnColonies();
             gameUI.SetActive(true);
         }
     }

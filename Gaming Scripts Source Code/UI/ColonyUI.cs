@@ -5,6 +5,6 @@ namespace AppleTrail
 {
     public class ColonyUI : MonoBehaviour
     {
-        public Colony colony;
+        public GameObject colony;
     }
 }
