@@ -60,7 +60,6 @@ function jsonViewer(json, collapsible = false) {
 
     function parseObject(obj) {
         var _result = '<div class="json">';
-        console.log(_result);
 
         for (var item in obj) {
             var key = item,
@@ -96,4 +95,5 @@ var json = {
 }
 
 var el = document.querySelector('#gameobjects-hierarchy-container');
+console.log(el);
 el.innerHTML = jsonViewer(json, true);
