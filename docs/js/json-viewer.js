@@ -76,25 +76,7 @@ function jsonViewer(json, collapsible = false) {
     return parseObject(json);
 };
 
-var json = {
-    'User': {
-        'Personal Info': {
-            'Name': 'Eddy',
-            'Age': 3
-        },
-        'Active': true,
-        'Messages': [
-            'Message 1',
-            'Message 2',
-            'Message 3'
-        ]
-    },
-    'Total': 1
-}
-
+var el = document.querySelector('#gameobjects-hierarchy-container');
 fetch('data/hierarchy.json')
     .then(response => response.json())
-    .then(jsonResponse => json = { jsonResponse }).then(jsonResponse => console.log(jsonResponse))
-
-var el = document.querySelector('#gameobjects-hierarchy-container');
-el.innerHTML = jsonViewer(json, true);
+    .then(jsonResponse => el.innerHTML = jsonViewer(jsonResponse, true))
