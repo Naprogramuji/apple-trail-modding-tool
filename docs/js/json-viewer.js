@@ -95,5 +95,4 @@ var json = {
 }
 
 var el = document.querySelector('#gameobjects-hierarchy-container');
-console.log(el);
 el.innerHTML = jsonViewer(json, true);
