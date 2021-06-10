@@ -76,7 +76,21 @@ function jsonViewer(json, collapsible = false) {
     return parseObject(json);
 };
 
-var json;
+var json = {
+    'User': {
+        'Personal Info': {
+            'Name': 'Eddy',
+            'Age': 3
+        },
+        'Active': true,
+        'Messages': [
+            'Message 1',
+            'Message 2',
+            'Message 3'
+        ]
+    },
+    'Total': 1
+}
 
 fetch('data/hierarchy.json')
     .then(response => response.json())
