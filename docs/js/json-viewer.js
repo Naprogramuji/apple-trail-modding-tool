@@ -59,7 +59,8 @@ function jsonViewer(json, collapsible = false) {
     }
 
     function parseObject(obj) {
-        let _result = '<div class="json">';
+        var _result = '<div class="json">';
+        console.log(_result);
 
         for (var item in obj) {
             var key = item,
