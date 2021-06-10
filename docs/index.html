@@ -36,37 +36,9 @@
     Localization Tool
 </li>
 <h2 id="gameobjects-hierarchy">GameObjects Hierarchy</h2>
+<div id="gameobjects-hierarchy-container"></div>
 <script type="module" src="js/json-viewer.js">
-    import JsonViewer from './jsonViewer';
-    const testJson = `{
-  "example1": [
-      {
-          "name": "test01",
-          "age": 18,
-          "gender": 0,
-          "student": true,
-          "children": null
-      },
-      {
-          "name": "test02",
-          "age": 19,
-          "gender": 1,
-          "student": true,
-          "children": null
-      }
-  ],
-  "example2": {
-      "friuts": ["apple", "grape", "jujube", "pear"],
-      "transport": ["taxi", "bus", "metro", "plane", "train"]
-  }
-}`
 
-    new JsonViewer({
-        container: document.getElementById("gameobjects-hierarchy"),
-        data: testJson,
-        theme: 'light',
-        expand: false
-    });
 </script>
 <h2 id="exporting-of-the-mod">Exporting of the Mod</h2>
 </li>
