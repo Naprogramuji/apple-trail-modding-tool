@@ -79,4 +79,4 @@ function jsonViewer(json, collapsible = false) {
 var el = document.querySelector('#gameobjects-hierarchy-container');
 fetch('data/hierarchy.json')
     .then(response => response.json())
-    .then(jsonResponse => el.innerHTML = jsonViewer(jsonResponse, true))
+    .then(jsonResponse => el.innerHTML = jsonViewer(jsonResponse, false))
