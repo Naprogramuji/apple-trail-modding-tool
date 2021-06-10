@@ -94,7 +94,7 @@ var json = {
 
 fetch('data/hierarchy.json')
     .then(response => response.json())
-    .then(jsonResponse => json = jsonResponse)
+    .then(jsonResponse => json = { jsonResponse }).then(jsonResponse => console.log(jsonResponse))
 
 var el = document.querySelector('#gameobjects-hierarchy-container');
 el.innerHTML = jsonViewer(json, true);
