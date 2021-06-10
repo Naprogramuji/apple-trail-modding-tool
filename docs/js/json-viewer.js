@@ -76,7 +76,9 @@ function jsonViewer(json, collapsible = false) {
     return parseObject(json);
 };
 
-
+fetch('data/hierarchy.json')
+    .then(response => response.json())
+    .then(jsonResponse => console.log(jsonResponse))
 
 var json = {
     'User': {
